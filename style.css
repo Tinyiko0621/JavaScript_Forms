@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #ffe6cc, #ffccff);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #3b3b3b;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #5a2a83;
+    /* soft plum */
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+/* Dropdown */
+select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #d08ed3;
+    border-radius: 12px;
+    background-color: #fff0f5;
+    margin-top: 10px;
+    transition: box-shadow 0.3s;
+}
+
+select:focus {
+    box-shadow: 0 0 10px #ffc0cb;
+}
+
+/* Link Button */
+a {
+    margin-top: 25px;
+    display: inline-block;
+    background-color: #a4508b;
+    background-image: linear-gradient(315deg, #a4508b 0%, #5f0a87 74%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(315deg, #5f0a87 0%, #a4508b 74%);
+}
+
+/* Output Text */
+#outputText {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}

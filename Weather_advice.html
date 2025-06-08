@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1> Weather Checker</h1>
+
+    <label for="weather">What's the weather like?</label>
+    <select id="weather">
+        <option value="sunny">Sunny</option>
+        <option value="windy">Windy</option>
+        <option value="rainy">Rainy</option>
+        <option value="snowy">Snowy</option>
+        <option value="cloudy">Cloudy</option>
+    </select>
+
+    <a href="#" onclick="giveAdvice()">Get Advice</a>
+
+    <p id="outputText">Weather advice will appear here.</p>
+
+    <script>
+        function giveAdvice() {
+            const weather = document.getElementById("weather").value;
+            let advice;
+
+            switch (weather) {
+                case "sunny":
+                    advice = "Wear your sunglasses 😎";
+                    break;
+                case "windy":
+                    advice = "Wear a jacket 🧥";
+                    break;
+                case "rainy":
+                    advice = "Bring an umbrella ☔ and a raincoat";
+                    break;
+                case "snowy":
+                    advice = "Dress warmly 🧣🧤";
+                    break;
+                case "cloudy":
+                    advice = "It might rain, carry a light jacket 🌥️";
+                    break;
+                default:
+                    advice = "Please select a valid weather type.";
+            }
+
+            document.getElementById("outputText").innerHTML = " Weather advice: " + advice;
+        }
+    </script>
+</body>
+
+</html>
